@@ -16,9 +16,20 @@
 
 - Transformer, BERT, ELECTRA 스터디
 - KoELECTRA를 기반으로 fine-tuning 실습
-  1. NSMC : 네이버 영화리뷰 감정 분석(https://github.com/e9t/nsmc)
-  2. KorQuAD : 질문에의 답변 찾기(https://korquad.github.io/KorQuad%201.0/)
-  3. KorSTS : 주어진 두 문장의 유사도(0~5) 측정 (https://github.com/kakaobrain/KorNLUDatasets)
+  1. KorSTS : 주어진 두 문장의 유사도(0~5) 측정 (https://github.com/kakaobrain/KorNLUDatasets)
+  2. NSMC : 네이버 영화리뷰 감정 분석(https://github.com/e9t/nsmc)
+  3. KorQuAD : 질문에의 답변 찾기(https://korquad.github.io/KorQuad%201.0/)
   4. Naver NER : 개체명(인명, 기관명, 지명 등) 추출 (https://github.com/naver/nlp-challenge)
   
 참고: [KoELECTRA](https://github.com/monologg/KoELECTRA)
+
+
+## KoELECTRA 기반 fine-tuning
+
+- 각 task 별로 필요한 함수들 재구성 및 주석 작업
+- transformer 4.5.0 기준으로 코드 수정
+
+1. KoELECTRA_seq_cls_KorSTS.ipynb
+2. KoELECTRA_seq_cls_nsmc_0406.ipynb
+3. KoElectra_run_korquad.ipynb
+4. koelectra_ner.ipynb
